@@ -7951,7 +7951,7 @@ aiK:function aiK(){},
 aiL:function aiL(){},
 aiM:function aiM(){},
 aiN:function aiN(){},
-aAO(){return new A.nm(A.b(["uci.server.host","uci.server.port","move.delay","selection.to.move.delay","max.depth","max.depth"],t.s),new A.ed(t.r7))},
+aAO(){return new A.nm(A.b(["uci.server.scheme","uci.server.host","uci.server.port","uci.server.base.path","move.delay","selection.to.move.delay","max.depth","max.depth"],t.s),new A.ed(t.r7))},
 av5(a){var s=A.aAO()
 s.a=A.aF(a.h(0,"name"))
 s.c=t.a.a(a.h(0,"properties")).hV(0,new A.aiI(),t.N,t.So)
@@ -7990,9 +7990,9 @@ _.b=b
 _.c=c
 _.d=d
 _.e=e},
-auX(a,b,c,d){var s=new A.kb(b,c,d,a,A.agc(null,t.EW)),r=A.HY().a,q=r.c.h(0,"uci.server.port").b[0],p=A.aJb(A.aHU("http://"+r.c.h(0,"uci.server.host").b[0]+":"+q+"/uci-api-0.0.1-SNAPSHOT",null,null)),o=$.aHf(),n=p.Vf$,m=t.N
-n.S(n,A.b([new A.AM(A.t(m,m)),new A.xJ(A.t(m,t.zQ)),new A.xK(A.t(m,m)),new A.xx(A.t(m,m))],t.lC))
-s.f=new A.aaW(p,o)
+auX(a,b,c,d){var s=new A.kb(b,c,d,a,A.agc(null,t.EW)),r=A.HY().a,q=r.c.h(0,"uci.server.scheme").b[0],p=r.c.h(0,"uci.server.port").b[0],o=A.aJb(A.aHU(q+"://"+r.c.h(0,"uci.server.host").b[0]+":"+p+"/"+r.c.h(0,"uci.server.base.path").b[0],null,null)),n=$.aHf(),m=o.Vf$,l=t.N
+m.S(m,A.b([new A.AM(A.t(l,l)),new A.xJ(A.t(l,t.zQ)),new A.xK(A.t(l,l)),new A.xx(A.t(l,l))],t.lC))
+s.f=new A.aaW(o,n)
 return s},
 kb:function kb(a,b,c,d,e){var _=this
 _.w=_.r=_.f=$
@@ -43887,7 +43887,7 @@ p=A.oP(A.aNd(this.aqr(p),B.bm))
 r=$.aEr()
 return A.NP(s,A.a0o(A.b([p,new A.d3(new A.aQ(0,5,0,5),A.atl(A.dL("Home",q,q,q,q,q,q,q),new A.aoW(a),r),q),new A.z1(1,B.Fa,A.tq(q,q,B.S,B.z,q,q,q,q,q,q),q)],t.F),B.d7,B.bd,B.cM))},
 aqr(a){var s,r,q,p,o,n,m=null,l=J.ev(0,t.VZ),k=A.at2(A.b([A.Jo(A.dL("Setting",m,m,m,m,m,m,m)),A.Jo(A.dL("Value",m,m,m,m,m,m,m))],t.UR),m,m,l,!0)
-for(s=a.b,r=t.sa,q=0;q<6;++q){p=s[q]
+for(s=a.b,r=t.sa,q=0;q<8;++q){p=s[q]
 if(a.c.a8(p))a.c.h(0,p).b.toString
 o=new A.aoX()
 n=o.$1(B.kr).gm()
