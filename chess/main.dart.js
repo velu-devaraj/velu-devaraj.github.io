@@ -7863,7 +7863,7 @@ this.b=b},
 Zt:function Zt(){},
 Zv:function Zv(a,b){this.a=a
 this.b=b},
-xI:function xI(){this.a=$},
+xI:function xI(){this.a=null},
 xF:function xF(a){this.a=a},
 Zj:function Zj(){},
 Ij:function Ij(){},
@@ -43083,26 +43083,23 @@ A.an4.prototype={
 $1(a){this.a.w=a},
 $S:36}
 A.an5.prototype={
-$0(){var s,r,q,p,o,n,m="UCIClient",l="Humanplayer",k=$.xJ
-k=(k==null?$.xJ=new A.xI():k).a
-k===$&&A.a()
-if(k!=null)s=k
-else{k=this.a
-r=k.r
-if(r!=null&&k.w!=null){q=k.d
-p=k.f
-o=q?A.avg(m,r,p,p):A.au0(l,r,p,p)
-r=k.e
-q=k.w
-p=!k.f
-s=A.aKG(o,r?A.avg(m,q,p,p):A.au0(l,q,p,p),"rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 0")
-n=A.iq().b
-s.d=!0
-q=n.a
-q===$&&A.a()
-q.push(s)
-n.ai()
-k.aq(new A.amS())}else return}A.pV(this.b,!1).Je("/game",s,t.X)},
+$0(){var s,r,q,p,o,n="UCIClient",m="Humanplayer",l=$.xJ,k=(l==null?$.xJ=new A.xI():l).a
+if(!(k!=null)){l=this.a
+s=l.r
+if(s!=null&&l.w!=null){r=l.d
+q=l.f
+p=r?A.avg(n,s,q,q):A.au0(m,s,q,q)
+s=l.e
+r=l.w
+q=!l.f
+k=A.aKG(p,s?A.avg(n,r,q,q):A.au0(m,r,q,q),"rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 0")
+o=A.iq().b
+k.d=!0
+r=o.a
+r===$&&A.a()
+r.push(k)
+o.ai()
+l.aq(new A.amS())}else return}A.pV(this.b,!1).Je("/game",k,t.X)},
 $S:0}
 A.amS.prototype={
 $0(){},
